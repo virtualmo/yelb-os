@@ -15,4 +15,4 @@ $ oc expose svc yelb-ui -n yelb
 ```
 
 App UI:
-![UI](https://raw.githubusercontent.com/mohanadelamin/yelb-os/master/images/yelb-os.png)
+![UI](https://raw.githubusercontent.com/mohanadelamin/yelb-os/master/yelb-os.png)
