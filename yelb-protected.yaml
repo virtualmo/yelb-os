@@ -68,6 +68,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    paloaltonetworks.com/firewall: pan-fw
+    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-ui-1ns
   namespace: yelb-protected
 spec:
@@ -90,6 +93,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    paloaltonetworks.com/firewall: pan-fw
+    k8s.v1.cni.cncf.io/networks: pan-cni
   name: redis-server-1ns
   namespace: yelb-protected
 spec:
@@ -112,6 +118,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    paloaltonetworks.com/firewall: pan-fw
+    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-db-1ns
   namespace: yelb-protected
 spec:
@@ -134,6 +143,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    paloaltonetworks.com/firewall: pan-fw
+    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-appserver-1ns
   namespace: yelb-protected
 spec:
