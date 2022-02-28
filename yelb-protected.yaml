@@ -68,9 +68,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    paloaltonetworks.com/firewall: pan-fw
-    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-ui-1ns
   namespace: yelb-protected
 spec:
@@ -80,6 +77,9 @@ spec:
     app: yelb-ui
   template:
     metadata:
+      annotations:
+        paloaltonetworks.com/firewall: pan-fw
+        k8s.v1.cni.cncf.io/networks: pan-cni
       labels:
         app: yelb-ui
         tier: frontend
@@ -93,9 +93,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    paloaltonetworks.com/firewall: pan-fw
-    k8s.v1.cni.cncf.io/networks: pan-cni
   name: redis-server-1ns
   namespace: yelb-protected
 spec:
@@ -105,6 +102,9 @@ spec:
     app: redis-server
   template:
     metadata:
+      annotations:
+        paloaltonetworks.com/firewall: pan-fw
+        k8s.v1.cni.cncf.io/networks: pan-cni
       labels:
         app: redis-server
         tier: cache
@@ -118,9 +118,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    paloaltonetworks.com/firewall: pan-fw
-    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-db-1ns
   namespace: yelb-protected
 spec:
@@ -130,6 +127,9 @@ spec:
     app: yelb-db
   template:
     metadata:
+      annotations:
+        paloaltonetworks.com/firewall: pan-fw
+        k8s.v1.cni.cncf.io/networks: pan-cni
       labels:
         app: yelb-db
         tier: backenddb
@@ -143,9 +143,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    paloaltonetworks.com/firewall: pan-fw
-    k8s.v1.cni.cncf.io/networks: pan-cni
   name: yelb-appserver-1ns
   namespace: yelb-protected
 spec:
@@ -155,6 +152,9 @@ spec:
     app: yelb-appserver
   template:
     metadata:
+      annotations:
+        paloaltonetworks.com/firewall: pan-fw
+        k8s.v1.cni.cncf.io/networks: pan-cni
       labels:
         app: yelb-appserver
         tier: middletier
